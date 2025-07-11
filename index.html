@@ -25,72 +25,69 @@
 
 
     <!-- Navbar Section -->
-    <section id="navbar">
-        <div class="navbar">
-            <div class="container-fluid">
-                <div class="col-12 nav-cont">
-
-                    <!-- Logo -->
-                    <div class="nav-logo col-3">
-                        <img src="Assesets/logo.png" alt="logo">
-                    </div>
-
-                    <!-- Hamburger icon for mobile -->
-                    <div class="mobile-menu-icon">
-                        <button id="menu-toggle">&#9776;</button>
-                    </div>
-
-                    <!-- Desktop Navigation Links -->
-                    <div class="nav-links col-4">
-                        <nav>
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Venues</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <!-- Search + Login Button (Desktop Only) -->
-                    <div class="nav-extra col-5">
-                        <div class="form-search col-6">
-                            <form>
-                                <input type="text" placeholder="Search Here">
-                                <button>
-                                    <lord-icon class="lord-icon" src="https://cdn.lordicon.com/kkvxgpti.json"
-                                        trigger="loop" delay="1000" colors="primary:#ffffff">
-                                    </lord-icon>
-                                </button>
-                            </form>
-                        </div>
-
-                        <div class="nav-login-btn">
-                            <button><a href="#">Log in</a></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <!-- Navbar Section -->
+<section id="navbar">
+  <div class="navbar">
+    <div class="container-fluid">
+      <div class="col-12 nav-cont">
+        <!-- Logo -->
+        <div class="nav-logo col-3">
+          <img src="Assesets/logo.png" alt="logo">
         </div>
 
-        <!-- Mobile Sidebar Menu -->
-        <div class="mobile-sidebar" id="mobile-sidebar">
-            <!-- Optional: Close button -->
-            <div style="text-align:right; padding: 10px 20px;">
-                <button onclick="document.getElementById('mobile-sidebar').classList.remove('show')"
-                    style="font-size: 20px; background:none; border:none; color:white;">&times;</button>
-            </div>
+        <!-- Hamburger icon for mobile -->
+        <div class="mobile-menu-icon">
+          <button id="menu-toggle">&#9776;</button>
+        </div>
 
+        <!-- Desktop Navigation Links -->
+        <div class="nav-links col-4">
+          <nav>
             <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Venues</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Log in</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Venues</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
+          </nav>
         </div>
-    </section>
+
+        <!-- Search + Login (Desktop only) -->
+        <div class="nav-extra col-5">
+          <div class="form-search col-6">
+            <form>
+              <input type="text" placeholder="Search Here">
+              <button>
+                <lord-icon class="lord-icon" src="https://cdn.lordicon.com/kkvxgpti.json"
+                  trigger="loop" delay="1000" colors="primary:#ffffff">
+                </lord-icon>
+              </button>
+            </form>
+          </div>
+
+          <div class="nav-login-btn">
+            <button><a href="#">Log in</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobile-sidebar">
+    <div style="text-align:right; padding: 10px 20px;">
+      <button onclick="closeSidebar()" style="font-size: 20px; background:none; border:none; color:white;">&times;</button>
+    </div>
+    <ul>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Venues</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Log in</a></li>
+    </ul>
+  </div>
+</section>
+
 
     <!---------------------------------------------------- hero section -->
 
@@ -642,7 +639,7 @@
         <div id="backToTop" class="up-home active">
             <a href="#navbar">
                 <div class="up-btn">
-                    <lord-icon class="lord-icon" src="https://cdn.lordicon.com/dwoxxgps.json" trigger="loop"
+                    <lord-icon class="lord-icon-sec" src="https://cdn.lordicon.com/dwoxxgps.json" trigger="loop"
                         colors="primary:#ffffff">
                     </lord-icon>
                 </div>
@@ -650,29 +647,6 @@
         </div>
     </section>
 
-
-    <script>
-
-        const menuToggle = document.getElementById("menu-toggle");
-        const sidebar = document.getElementById("mobile-sidebar");
-
-        menuToggle.addEventListener("click", () => {
-            // Toggle class
-            sidebar.classList.toggle("show");
-
-            // Toggle visibility
-            if (sidebar.classList.contains("show")) {
-                sidebar.style.display = "block";
-            } else {
-                sidebar.style.display = "none";
-            }
-        });
-
-        function closeSidebar() {
-            sidebar.classList.remove("show");
-            sidebar.style.display = "none";
-        }
-    </script>
 
 </body>
 
@@ -751,9 +725,10 @@
     }
   }
 });
-
-
 </script>
+
+
+<script src="script.js"></script>
 
 
 </html>

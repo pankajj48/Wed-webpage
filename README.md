@@ -21,7 +21,10 @@ A fully responsive and visually stunning wedding website built with **HTML**, **
 
 ## 📸 Screenshots
 
-> _Add screenshots or screen recordings of your project here if desired._
+> <img width="1912" height="888" alt="image" src="https://github.com/user-attachments/assets/daba285b-a056-4310-969f-22c520d74756" />
+
+ > live Preview
+https://pankajj48.github.io/Wed-webpage/
 
 ---
 

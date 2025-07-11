@@ -1,0 +1,121 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* SWIPER CONTAINER */
+.swiper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+/* SWIPER SLIDES */
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+/* IMAGE STYLING IF YOU USE <img> (not needed if bg image used directly) */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+/* VENUE CONTENT */
+.venue-1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  text-align: left;
+  padding: 0 0 15px 15px;
+  box-shadow: 0 -200px 80px -60px rgba(0, 0, 0, 0.6) inset;
+}
+
+.slider-head {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.slider-text {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* SWIPER ARROWS */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e72e77;
+}
+
+/* FAKE TEXT AREA (if used) */
+.fake-text-area {
+  padding: 20px;
+  font-size: 10px;
+}
+
+.fake-text-area p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.fake-date {
+  color: grey;
+}
+
+/* SECTION TITLE */
+.venue-txt h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* ------------------- */
+/* RESPONSIVE SECTION */
+/* ------------------- */
+@media (max-width: 768px) {
+  .swiper-slide {
+    height: 220px;
+  }
+
+  .venue-1 {
+    height: 100%;
+    padding: 10px;
+    box-shadow: 0 -150px 60px -40px rgba(0, 0, 0, 0.5) inset;
+  }
+
+  .slider-head {
+    font-size: 1.1rem;
+  }
+
+  .slider-text {
+    font-size: 0.7rem;
+  }
+
+  .venue-txt h4 {
+    font-size: 20px;
+  }
+}
